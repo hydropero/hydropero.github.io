@@ -14,7 +14,7 @@ I was recently tasked with implementing an automated backup solution for the out
 <li>&nbsp;⬜️ Make the script run repeatedly at set intervals of time</li>
 </ul>
 
-Again, with my limited exposure to PowerShell scripting, I can confidently say the native "PowerShell IDE" known as PowerShell ISE (Integrated Scripting Environment) is fantastic, so that will be my environment of choice.
+Again, with my limited exposure to PowerShell scripting, I can confidently say the native "PowerShell IDE" known as PowerShell ISE (Integrated Scripting Environment) is superior, so that will be my development environment of choice.
 
 It can be found within the start menu under the Windows PowerShell directory. Alternatively, pressing the Windows + r key will bring up the run prompt and you can enter`powershell_ise.exe`
 
@@ -82,4 +82,4 @@ Here is how this can be achieved conceptually. A task will be created within Tas
 
 <br>
 ## Final Notes
-This is fairly barebones, but perfect for our use case. A few things worth implementing in the future, and I may very well revise this post with down the line are: multiple dated full backups, additional error checking/error logging for completion failure, an well as automation of "task scheduler" tasks directly from PowerShell.
+This is a fairly minimalist solution, but perfect for our use case. A few things worth implementing in the future, and I may very well revise this post with down the line are: multiple dated full backups, additional error checking/error logging for completion failure, an well as automation of "task scheduler" tasks directly from PowerShell.
