@@ -1,5 +1,5 @@
 ---
-title: "Archive files to NAS via PowerShell"
+title: "File Archival From Server to NAS via PowerShell"
 author: Myles
 ---
 
@@ -10,7 +10,7 @@ I was recently tasked with implementing an automated backup solution for the out
 #### **Our Tasks**
 <ul>
 <li>&nbsp;⬜️ Archive files/folders to NAS</li>
-<li>&nbsp;⬜️ Make sure as little sensitive data is exposed in the script as possible  </li>
+<li>&nbsp;⬜️ Expose as little sensitive data in the script as possible </li>
 <li>&nbsp;⬜️ Make the script run repeatedly at set intervals of time</li>
 </ul>
 
@@ -34,7 +34,7 @@ This line is pretty self-explanatory, but to review, the first parameter is the 
 #### **Our Tasks**
 <ul>
 <li>&nbsp;✅ Archive files/folders to NAS</li>
-<li>&nbsp;⬜️ Make sure as little sensitive data is exposed in the script as possible  </li>
+<li>&nbsp;⬜️ Expose as little sensitive data in the script as possible </li>
 <li>&nbsp;⬜️ Make the script run repeatedly at set intervals of time</li>
 </ul>
 
@@ -76,7 +76,7 @@ Here is how this can be achieved conceptually. A task will be created within Tas
 #### **Our Tasks**
 <ul>
 <li>&nbsp;✅ Archive files/folders to NAS</li>
-<li>&nbsp;✅ Make sure as little sensitive data is exposed in the script as possible  </li>
+<li>&nbsp;✅ Expose as little sensitive data in the script as possible </li>
 <li>&nbsp;✅ Make the script run repeatedly at set intervals of time</li>
 </ul>
 
