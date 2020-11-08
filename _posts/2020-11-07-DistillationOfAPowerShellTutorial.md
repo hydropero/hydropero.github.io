@@ -1,11 +1,11 @@
 ---
-title: "Distillations of a PowerShell Tutorial Series"
+title: "Distillation of a YouTube PowerShell Tutorial"
 author: Myles
 ---
 
-I've heard from a considerable number of folk that PowerShell is best learned through experience. Select an interesting project, work through it, and learn from the ensuing struggles. With consideration to that message, I still see value in building a foundational knowledge base. I was recommended the [Busy Ping](https://www.youtube.com/playlist?list=PL4SEtvjUqihGdXEQbsKFHOXTswqdqCE2X) PowerShell Tutorial series so that is where I'll begin my journey.
+I've heard often that PowerShell is best learned through experience. Select an interesting project, work through it, and learn from the ensuing struggles. Keeping that in mind, I still see value in building a foundational knowledge of the Language. I was recommended the [Busy Ping](https://www.youtube.com/playlist?list=PL4SEtvjUqihGdXEQbsKFHOXTswqdqCE2X) PowerShell Tutorial series so that is where we will begin our journey.
 
- My intention for this post is to review, document, and dissect the more essential information covered in the series for quick reference down the road. The series is 13 video long and will be broken down in similar fashion here.
+ My intention for this post is to review, document, and dissect the more essential information covered in the series for later reference. The series spans 13 video and will be broken down in similar fashion.
 
 <br>
 
