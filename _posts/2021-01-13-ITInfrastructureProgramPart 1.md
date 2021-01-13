@@ -21,7 +21,7 @@ Below is a list of computing requirements I prefer your PC meet/exceed, however 
 There are three files we will initially need: a Windows 2019 ISO, a Windows 10 Enterprise ISO, and a virtualization software of some kind. For our purposes we'll be using Oracle's VirtualBox application. I've added links to them below
 <br> 
 
-[Windows Server 2019](https://www.com/en-US/evalcenter/evaluate-windows-server-2019?filetype=ISO)
+[Windows Server 2019](https://www.microsoft.com/en-US/evalcenter/evaluate-windows-server-2019?filetype=ISO)
 - Make sure you have the ISO selected, not Azure or VHD.
 
 [Windows 10](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-10-enterprise)
