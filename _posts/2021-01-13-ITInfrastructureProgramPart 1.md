@@ -29,7 +29,8 @@ There are three files we will initially need: a Windows 2019 ISO, a Windows 10 E
 
  [VirtualBox Downloads](https://www.virtualbox.org/wiki/Downloads)
  - Select the appropriate download for your OS from here.
-![Download options](C:\Users\Myles\Desktop\jekyll_real\midnight\assets\images\class_p1)
+ 
+![Download options](assets\images\class_p1\Vboxdownload.PNG)
 
 
 Proceed through VirtualBox's installation using default settings. This should be fairly easy but contact me if you run into any difficulties. Once the installation is complete start up the application. 
