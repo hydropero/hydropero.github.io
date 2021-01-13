@@ -29,7 +29,7 @@ There are three files we will initially need: a Windows 2019 ISO, a Windows 10 E
 
  [VirtualBox Downloads](https://www.virtualbox.org/wiki/Downloads)
  - Select the appropriate download for your OS from here.
- 
+
 ![Download options](assets\images\class_p1\Vboxdownload.PNG)
 
 
@@ -41,17 +41,17 @@ Proceed through VirtualBox's installation using default settings. This should be
 
 Upon starting VirtualBox you should be met with a screen similiar to the one below.
 
-![VirtualBox Start Up](assets\images\class_p1\VboxStart.PNG)
+![VirtualBox Start Up](\assets\images\class_p1\VboxStart.PNG)
 
 <br>
 
 We will now build our first Virtual Machine. Select new from the menu top-center.
 
-![New](C:\Users\Myles\Desktop\jekyll_real\midnight\assets\images\class_p1\Vboxnew.PNG)
+![New](\assets\images\class_p1\Vboxnew.PNG)
 
 For a name input Windows 2019 Server and be sure to select Windows 2019 64-bit as this is correct for even remotely modern CPUs.
 
-![Settings](C:\Users\Myles\Desktop\jekyll_real\midnight\assets\images\class_p1\2016server.PNG)
+![Settings](\assets\images\class_p1\2016server.PNG)
 
 Next we'll be provisioning the amount of RAM to be used by the Virtual Machine. Assuming you have at least 8 GBs and certainly if you have 16 GBs or more set the amount to 4096 MB aka 4 GBs.
 
