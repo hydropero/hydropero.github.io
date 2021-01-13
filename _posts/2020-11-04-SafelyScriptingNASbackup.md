@@ -16,7 +16,7 @@ I was recently tasked with implementing an automated backup solution for the out
 
 Again, with my limited exposure to PowerShell scripting, I can confidently say the native "PowerShell IDE" known as PowerShell ISE (Integrated Scripting Environment) is superior, so that will be my development environment of choice.
 
-It can be found within the start menu under the Windows PowerShell directory. Alternatively, pressing the Windows + r key will bring up the run prompt and you can enter`powershell_ise.exe`
+PowerShell ISE can be found within the start menu under the Windows PowerShell directory. Alternatively, pressing the Windows + r key will bring up the run prompt and you can enter`powershell_ise.exe`
 
 **The PowerShell ISE**
 ![My helpful screenshot](\assets\images\post_AutoBackupNAS\PowerShell_IDE.PNG)
@@ -28,8 +28,7 @@ At it's rawest, a folder can be copied to a selected destination using [Copy-Ite
 Copy-Item "C:\Important_LIMS_Files" -Destination "E:\IT_Internal" -Recurse -Force
 ```
 
-This line is pretty self-explanatory, but to review, the first parameter is the path of the item you'd like copied. The second is the destination you would your folder copied to. The "-Recurse" option is appended to change the command to copy all directories, subdirectories and the files within your selected directory as opposed to only an empty folder. Finally, the "-Force" option force overwrites any files with the same name already existing in that directory. This is useful to us because we don't need multiple backups but rather a single most up-to-date version of the files.
-
+This line is pretty self-explanatory, but to review, the first parameter is the path of the item you'd like copied. The second is the destination you'd like your folder copied to. The "-Recurse" option is appended to change the command to copy all directories, subdirectories and the files within your selected directory as opposed to only an empty folder. Finally, the "-Force" option force overwrites any files with the same name already existing in that directory. This is useful to us because we don't need multiple backups, but rather a single most up-to-date version of the files.
 
 #### **Our Tasks**
 <ul>
@@ -40,7 +39,7 @@ This line is pretty self-explanatory, but to review, the first parameter is the 
 
 For my purposes and many others, accessing your NAS may require authentication. This imposes the issue of providing proper authentication to our script without leaving credentials sitting naked and afraid. My solution makes use of Task Scheduler to securely apply credentials and automate the script.
 
-Here is how this can be achieved conceptually. A task will be created within Task Manager to run our PowerShell script at daily interval (the frequency can be adapted to your needs). When creating this task provide the  **administrative** credentials necessary to access the NAS drive. This process is outlined in the screenshots below.
+Here is how this can be achieved conceptually: A task will be created within Task Manager to run our PowerShell script at daily interval (the frequency can be adapted to your needs). When creating this task, provide the  **administrative** credentials necessary to access the NAS drive. This process is outlined in the screenshots below.
 
 ![My helpful screenshot](\assets\images\post_AutoBackupNAS\taskscheduler1.PNG)
 **Select Create Task**
@@ -82,4 +81,4 @@ Here is how this can be achieved conceptually. A task will be created within Tas
 
 <br>
 ## Final Notes
-This is a fairly minimalist solution, but perfect for our use case. A few things worth implementing in the future, and I may very well revise this post with down the line are: multiple dated full backups, additional error checking/error logging for completion failure, an well as automation of "task scheduler" tasks directly from PowerShell.
+This is a fairly minimalist solution, but perfect for our use case. I may very well revise this post down the line, but a few things worth implementing are: multiple dated full backups, additional error checking/error logging for completion failure, as well as automation of "task scheduler" tasks directly from PowerShell.

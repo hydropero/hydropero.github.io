@@ -1,9 +1,41 @@
 ---
-title: "Distillations of a PowerShell YouTube Tutorial"
-author: Myles
+title: "IT Infrastructure Mentorship Part 1"
+author: "Myles"
 ---
 
-I've heard often that PowerShell is best learned through experience. Select an interesting project, work through it, and learn from the ensuing struggles. Keeping that in mind, I still see value in building a foundational knowledge of the language. I was recommended the [Busy Ping](https://www.youtube.com/playlist?list=PL4SEtvjUqihGdXEQbsKFHOXTswqdqCE2X) PowerShell Tutorial series so that is where we will begin our journey.
+# IT Infrastructure VLAB 1 
+
+Part 1 of this series will focus on building the virtual environment from which we'll be installing our operating systems, roles, and services.
+
+Below is a list of computing requirements I would prefer your PC to meet/exceed, however I've linked a site with a comprehensive list of bare minimum requirements as well.
+
+| [**Prerequisites**](https://www.techrepublic.com/article/virtualbox-everything-the-pros-need-to-know/#:~:text=Minimum%20system%20requirements%20are%3A,start%20at%2010%20GB%20each.) |
+| :---:    |
+| Windows 10 or Linux OS |
+| 8GB RAM |
+| Dual Core CPU |
+| 256 GB HDD |
+
+Navigate to the VirtualBox download page here - [VirtualBox Downloads](https://www.virtualbox.org/wiki/Downloads) and select the appropriate download for your OS.
+![Here](C:\Users\Myles\Desktop\jekyll_real\midnight\assets\images\class_p1\Vboxdownload.JPG)
+
+
+
+
+
+
+
+| Windows 10 or Linux Distro |
+| :---        |    :---   |
+| **An Automation Framework?**   | **Yes** |
+| **A Complete Replacement for Command Prompt?**   | **No**        |
+| **A Full fledge Programming Language?**   | **No** --- *Though Debatable IMO*      |
+| **Strong Querying & Reporting Tool?** | **Yes** |
+
+
+
+
+[Busy Ping](https://www.youtube.com/playlist?list=PL4SEtvjUqihGdXEQbsKFHOXTswqdqCE2X) PowerShell Tutorial series so that is where we will begin our journey.
 
  My intention for this post is to review, document, and dissect the more essential information covered in the series for later reference. The series spans 13 video and will be broken down in similar fashion.
 
@@ -11,13 +43,13 @@ I've heard often that PowerShell is best learned through experience. Select an i
 
 ## PowerShell Tutorial | 001 | Introduction
 
-**What is PowerShell?**
-
+| **What is PowerShell?** |
 | :---        |    :---   |
 | **An Automation Framework?**   | **Yes** |
 | **A Complete Replacement for Command Prompt?**   | **No**        |
 | **A Full fledge Programming Language?**   | **No** --- *Though Debatable IMO*      |
 | **Strong Querying & Reporting Tool?** | **Yes** |
+
 
 <br>
 
