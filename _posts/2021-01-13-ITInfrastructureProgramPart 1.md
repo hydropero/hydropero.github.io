@@ -7,103 +7,95 @@ author: "Myles"
 
 Part 1 of this series will focus on building the virtual environment from which we'll be installing our operating systems, roles, and services.
 
-Below is a list of computing requirements I would prefer your PC to meet/exceed, however I've linked a site with a comprehensive list of bare minimum requirements as well.
+Below is a list of computing requirements I prefer your PC meet/exceed, however I've linked a site with a comprehensive list of the bare minimum requirements for our uses as well.
 
 | [**Prerequisites**](https://www.techrepublic.com/article/virtualbox-everything-the-pros-need-to-know/#:~:text=Minimum%20system%20requirements%20are%3A,start%20at%2010%20GB%20each.) |
 | :---:    |
 | Windows 10 or Linux OS |
 | 8GB RAM |
-| Dual Core CPU |
+| 64-bit dual core CPU |
 | 256 GB HDD |
 
-Navigate to the VirtualBox download page here - [VirtualBox Downloads](https://www.virtualbox.org/wiki/Downloads) and select the appropriate download for your OS.
-![Here](C:\Users\Myles\Desktop\jekyll_real\midnight\assets\images\class_p1\Vboxdownload.JPG)
+<br>
+
+There are three files we will initially need: a Windows 2019 ISO, a Windows 10 Enterprise ISO, and a virtualization software of some kind. For our purposes we'll be using Oracle's VirtualBox application. I've added links to them below
+<br> 
+
+[Windows Server 2019](https://www.com/en-US/evalcenter/evaluate-windows-server-2019?filetype=ISO)
+- Make sure you have the ISO selected, not Azure or VHD.
+
+[Windows 10](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-10-enterprise)
+- The same applies here, get the Enterprise ISO
+
+ [VirtualBox Downloads](https://www.virtualbox.org/wiki/Downloads)
+ - Select the appropriate download for your OS from here.
+![Download options](C:\Users\Myles\Desktop\jekyll_real\midnight\assets\images\class_p1)
 
 
-
-
-
-
-
-| Windows 10 or Linux Distro |
-| :---        |    :---   |
-| **An Automation Framework?**   | **Yes** |
-| **A Complete Replacement for Command Prompt?**   | **No**        |
-| **A Full fledge Programming Language?**   | **No** --- *Though Debatable IMO*      |
-| **Strong Querying & Reporting Tool?** | **Yes** |
-
-
-
-
-[Busy Ping](https://www.youtube.com/playlist?list=PL4SEtvjUqihGdXEQbsKFHOXTswqdqCE2X) PowerShell Tutorial series so that is where we will begin our journey.
-
- My intention for this post is to review, document, and dissect the more essential information covered in the series for later reference. The series spans 13 video and will be broken down in similar fashion.
+Proceed through VirtualBox's installation using default settings. This should be fairly easy but contact me if you run into any difficulties. Once the installation is complete start up the application. 
 
 <br>
 
-## PowerShell Tutorial | 001 | Introduction
+## Installing our OS Images within VirtualBox
 
-| **What is PowerShell?** |
-| :---        |    :---   |
-| **An Automation Framework?**   | **Yes** |
-| **A Complete Replacement for Command Prompt?**   | **No**        |
-| **A Full fledge Programming Language?**   | **No** --- *Though Debatable IMO*      |
-| **Strong Querying & Reporting Tool?** | **Yes** |
+Upon starting VirtualBox you should be met with a screen similiar to the one below.
 
+![VirtualBox Start Up](assets\images\class_p1\VboxStart.PNG)
 
 <br>
 
-## PowerShell Tutorial | 002 | PowerShell Release History
-**The Current PowerShell version at the time of writing this is 5.1.19041.546** - Your version can be found by running
-```powershell
-$PSVersionTable
-```
+We will now build our first Virtual Machine. Select new from the menu top-center.
 
-<br>
+![New](C:\Users\Myles\Desktop\jekyll_real\midnight\assets\images\class_p1\Vboxnew.PNG)
 
-## PowerShell Tutorial | 003 | Navigating PowerShell
-**By default, both a 32bit - [Windows PowerShell (x86)] & a 64 bit [Windows PowerShell] are installed**
+For a name input Windows 2019 Server and be sure to select Windows 2019 64-bit as this is correct for even remotely modern CPUs.
 
-<br>
+![Settings](C:\Users\Myles\Desktop\jekyll_real\midnight\assets\images\class_p1\2016server.PNG)
 
-## PowerShell Tutorial | 004 | Basic usage and commands
-Much like the Linux CLI aliases can be created. An alias is a custom shortcut made to represent a different command. Below is an example of how to create one and how they function.
+Next we'll be provisioning the amount of RAM to be used by the Virtual Machine. Assuming you have at least 8 GBs and certainly if you have 16 GBs or more set the amount to 4096 MB aka 4 GBs.
 
-```powershell
-New-Alias -Name "List" Get-ChildItem
-```
-By running this command "list" has been created as an alias for the "Get-ChildItem" command, that is to say entering "list" will instead run "Get-ChildItem" under the hood until that PowerShell session is closed. This was also an example of a temporary alias, but permanent aliases can also be created.
+![RAM](C:\Users\Myles\Desktop\jekyll_real\midnight\assets\images\class_p1\VboxRAM.PNG)
+
+We're now creating our virtual hard drive, leave this to the default option which should be the same as shown below, if not change it to mirror the photo. Now select Create.
+
+![VHD](C:\Users\Myles\Desktop\jekyll_real\midnight\assets\images\class_p1\VboxVHD.PNG)
+
+Leave this to default selection as well.
+![VDI](C:\Users\Myles\Desktop\jekyll_real\midnight\assets\images\class_p1\VboxVDI.PNG)
+
+Select default option again this time - Dynamically allocate. The difference between the two is that by selecting dynamic allocation your virtual hard drive can grow beyond the size we provision for it without any user interaction. The alternate Fixed size means if our virtual hard drive fills up, we will need to manually expand it.
+
+![Dynamic](C:\Users\Myles\Desktop\jekyll_real\midnight\assets\images\class_p1\VboxDynamic.PNG)
+
+You may choose the file location for your hard drive or you can leave it at the default location. I suggest the former. Choose a hard drive size of 40 GB this should leave plenty of room for us to install services and applications as necessary.
+
+![Hard Drive Size](C:\Users\Myles\Desktop\jekyll_real\midnight\assets\images\class_p1\VboxDriveSize.PNG)
+
+Finally select create once more.
+
+![FirstVM](C:\Users\Myles\Desktop\jekyll_real\midnight\assets\images\class_p1\VboxFirstVM.PNG)
+
+You've done it you've created your first VM (virtual machine). Go ahead and start it up!
+
+![GiveIso](C:\Users\Myles\Desktop\jekyll_real\midnight\assets\images\class_p1\GiveMeIso.PNG)
+
+You were probably just met with this screen no? That's because we've only created the shell of the virtual machine, there's no operating system installed. Now it's time to put our Server 2019 ISO to good use. Sekect the folder icon to the right of the drop down menu, select add in the top left corner and navigate your downloads folder where the ISO most likely resides. Select this and press open. You should now see something like this 
+
+![ODS](C:\Users\Myles\Desktop\jekyll_real\midnight\assets\images\class_p1\VbocODS.PNG)
+
+I have a couple extra operating systems in there due to previous projects but you should see your Windows2019.iso file at least. Highlight it and select choose, then start. You've now fed your computer a virtual disk, that is basically what an ISO is, a virtual image of a disc.
+
+If your screen looks the same as the image below congrat you've made it your OS installation screen. This concludes part 1 of the tutorial. You may close out of the screen and VirtualBox application. My suggestion is do two more like this soon after, except it'll be for our Windows 10 image instead. Make sure when you're building the VM you select an appropriate title and the correct operating system as show beneath.
+
+![osoptions](C:\Users\Myles\Desktop\jekyll_real\midnight\assets\images\class_p1\osoptions.png)
+
+I look forward to see you at part 2 of this series where we'll be installing our operating systems and possibly a role on our new Windows 2019 Server.
 
 
-| PowerShell Commands | Aliases with equivalent to Linux's |
-| :----:        |    :----:   |
-| ```Get-ChildItem``` or ```dir``` in cmd  | ```ls``` |
-| ```New-Item``` + few [notes](https://stackoverflow.com/questions/50832054/mkdir-vs-new-item-is-it-the-same-cmdlets) | ```mkdir``` |
-| ```Get-Processes``` | ```ps``` |
-
-<br>
-
-| PowerShell Commands | Aliases specific to PowerShell |
-| :----:        |    :----:   |
-| ```Get-Alias``` | ```alias``` |
-| ```Get-Commands``` | ```gcm``` |
-
-### Notes
-- |Verb Dash Hyphen| aka "Get-Help" syntax is used for all PowerShell commands.
-- These verb dash hyphen commands are known and referred to as Cmdlets.
 
 
 
 
 
-## PowerShell Tutorial | 005 | Upgrading PowerShell
-Mostly irrelevant information as the series is pretty dated, instead I'll leave a link to upgrade PowerShell 7.0 the most current release. | [PowerShell 7.0](https://docs.microsoft.com/en-us/powershell/scripting/install/migrating-from-windows-powershell-51-to-powershell-7?view=powershell-7) | This will install alongside PowerShell 5.0 leaving both versions functional.
 
-<br>
 
-## PowerShell Tutorial | 006 | Cmdlets and Aliases - Part 1
-For aliases refer to table in [PowerShell Tutorial | 004 |]
-
-<br>
-## PowerShell Tutorial | 007 | Using Help in PowerShell
-Get-Help will provide partial information about the a Cmdlet. For the unabridged version of "Get-Help", "Update-Help" must be run. "Update-Help" will download the full version of the help files on your machine - must be run in administrative PowerShell terminal. *This is worth doing, especially when starting out*
