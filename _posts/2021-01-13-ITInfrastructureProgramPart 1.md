@@ -22,7 +22,7 @@ Below is a list of computing requirements that I prefer your PC to meet/exceed, 
 
 <br>
 
-There are three files we will initially need: a Windows 2019 ISO, a Windows 10 Enterprise ISO, and a virtualization software of some kind. For our purposes we'll be using Oracle's VirtualBox application. I've added links to them below
+There are three files we will initially need: a Windows 2019 ISO, a Windows 10 Enterprise ISO, and a virtualization software of some kind. For our purposes we'll be using Oracle's VirtualBox. I've added links to all of these below.
 <br> 
 
 [Windows Server 2019](https://www.microsoft.com/en-US/evalcenter/evaluate-windows-server-2019?filetype=ISO)
@@ -37,13 +37,13 @@ There are three files we will initially need: a Windows 2019 ISO, a Windows 10 E
 ![Download options](\assets\images\class_p1\Vboxdownload.PNG)
 
 
-Proceed through VirtualBox's installation using the default settings. This should be fairly easy, but contact me if you run into any difficulties. Once the installation is complete, start up the application. 
+Proceed through VirtualBox's installation using the default settings. This should be fairly easy, but contact me if have any difficulties. Once the installation is complete, start VirtualBox. 
 
 <br>
 
 ## Installing our OS Images within VirtualBox
 
-Upon starting VirtualBox you should be met with a screen similiar to the one below.
+Upon starting VirtualBox you will be met with a screen similiar to the one below.
 
 ![VirtualBox Start Up](\assets\images\class_p1\VboxStart.PNG)
 
