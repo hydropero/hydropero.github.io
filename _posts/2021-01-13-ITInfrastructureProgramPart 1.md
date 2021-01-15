@@ -3,11 +3,15 @@ title: "IT Infrastructure Mentorship Part 1"
 author: "Myles"
 ---
 
-# IT Infrastructure VLAB 1 
+<br>
+
+<br>
+
+# Virtual Infrastructure Lab 1 
 
 Part 1 of this series will focus on building the virtual environment from which we'll be installing our operating systems, roles, and services.
 
-Below is a list of computing requirements I prefer your PC meet/exceed, however I've linked a site with a comprehensive list of the bare minimum requirements for our uses as well.
+Below is a list of computing requirements that I prefer your PC meet/exceed, however I've linked a site with a comprehensive list of the absolute minimum requirements as well.
 
 | [**Prerequisites**](https://www.techrepublic.com/article/virtualbox-everything-the-pros-need-to-know/#:~:text=Minimum%20system%20requirements%20are%3A,start%20at%2010%20GB%20each.) |
 | :---:    |
@@ -30,10 +34,10 @@ There are three files we will initially need: a Windows 2019 ISO, a Windows 10 E
  [VirtualBox Downloads](https://www.virtualbox.org/wiki/Downloads)
  - Select the appropriate download for your OS from here.
 
-![Download options](assets\images\class_p1\Vboxdownload.PNG)
+![Download options](\assets\images\class_p1\Vboxdownload.PNG)
 
 
-Proceed through VirtualBox's installation using default settings. This should be fairly easy but contact me if you run into any difficulties. Once the installation is complete start up the application. 
+Proceed through VirtualBox's installation using the default settings. This should be fairly easy, but contact me if you run into any difficulties. Once the installation is complete, start up the application. 
 
 <br>
 
@@ -49,11 +53,11 @@ We will now build our first Virtual Machine. Select new from the menu top-center
 
 ![New](\assets\images\class_p1\Vboxnew.PNG)
 
-For a name input Windows 2019 Server and be sure to select Windows 2019 64-bit as this is correct for even remotely modern CPUs.
+For a name, input Windows 2019 Server and be sure to select Windows 2019 64-bit. This is correct for nearly all modern CPUs, if you have error while booting from your ISO later on in this lab contact me, as you may have a x86 processor.
 
 ![Settings](\assets\images\class_p1\2016server.PNG)
 
-Next we'll be provisioning the amount of RAM to be used by the Virtual Machine. Assuming you have at least 8 GBs and certainly if you have 16 GBs or more set the amount to 4096 MB aka 4 GBs.
+Next we'll be provisioning the amount of RAM to be used by our Virtual Machine. Assuming you have at least 8 GBs and certainly if you have 16 GBs or more, set the amount equal to 4096 MB which is equivalent to 4 GBs.
 
 ![RAM](\assets\images\class_p1\VboxRAM.PNG)
 
@@ -65,11 +69,11 @@ Leave this to default selection as well.
 
 ![VDI](\assets\images\class_p1\VboxVDI.PNG)
 
-Select default option again this time - Dynamically allocate. The difference between the two is that by selecting dynamic allocation your virtual hard drive can grow beyond the size we provision for it without any user interaction. The alternate Fixed size means if our virtual hard drive fills up, we will need to manually expand it.
+Select the default option again of - Dynamically allocate. The difference between the two is that by selecting dynamic allocation, your virtual hard drive can grow beyond the size we've provision without any user interaction. The alternate - Fixed size means if our virtual hard drive fills up, we will need to manually expand it.
 
 ![Dynamic](\assets\images\class_p1\VboxDynamic.PNG)
 
-You may choose the file location for your hard drive or you can leave it at the default location. I suggest the former. Choose a hard drive size of 40 GB this should leave plenty of room for us to install services and applications as necessary.
+You may choose the file location for your hard drive or you can leave it at the default location. I suggest the former. Choose a hard drive size of 40 GB which should leave plenty of room for us to install services and applications as necessary.
 
 ![Hard Drive Size](\assets\images\class_p1\VboxDriveSize.PNG)
 
@@ -77,21 +81,28 @@ Finally select create once more.
 
 ![FirstVM](\assets\images\class_p1\VboxFirstVM.PNG)
 
-You've done it you've created your first VM (virtual machine). Go ahead and start it up!
+You've done it, you've created your first VM (virtual machine). Go ahead and start it up!
 
 ![GiveIso](\assets\images\class_p1\GiveMeIso.PNG)
 
-You were probably just met with this screen no? That's because we've only created the shell of the virtual machine, there's no operating system installed. Now it's time to put our Server 2019 ISO to good use. Sekect the folder icon to the right of the drop down menu, select add in the top left corner and navigate your downloads folder where the ISO most likely resides. Select this and press open. You should now see something like this 
+You were probably just met with this screen. No? That's because we've only created the shell of the virtual machine. Imagine you've just finished putting all the components of your new PC together, but **gasp** you forgot to *buy* a copy of an operating system! Fortunately, we have a handy dandy copy of Windows Server 2019 in the form of an ISO. Select the folder icon to the right of the drop down menu, select add in the top left corner, and now navigate to your downloads folder where the ISO likely resides. Select it and press open. You should now see something similar to this.
 
 ![ODS](\assets\images\class_p1\VbocODS.PNG)
 
-I have a couple extra operating systems in there due to previous projects but you should see your Windows2019.iso file at least. Highlight it and select choose, then start. You've now fed your computer a virtual disk, that is basically what an ISO is, a virtual image of a disc.
+I have a couple extra operating systems in there due to previous projects but you should see your Windows2019.iso file at least. Highlight it and select choose, then start. You've now fed your computer a virtual disk, essentially what an ISO is, a virtual image of a disc.
 
-If your screen looks the same as the image below congrat you've made it your OS installation screen. This concludes part 1 of the tutorial. You may close out of the screen and VirtualBox application. My suggestion is do two more like this soon after, except it'll be for our Windows 10 image instead. Make sure when you're building the VM you select an appropriate title and the correct operating system as show beneath.
+If your screen looks the same as the image below congrats you've made it to your OS installation screen. This concludes Part 1 of the Virtual Infrastructure tutorial. You are safe to close out of the screen and the VirtualBox application. You do need to attempt to install OS just yet. Instead, my suggestion is you create two more like this, except it'll be for our Windows 10 image this time around. Make sure when you're building the VM you select an appropriate title and operating system as show below.
 
 ![osoptions](\assets\images\class_p1\osoptions.png)
 
-I look forward to see you at part 2 of this series where we'll be installing our operating systems and possibly a role on our new Windows 2019 Server.
+
+Please email me when you have successfully completed all three or are having issue with some part of the process.
+
+<br>
+<br>
+
+
+
 
 
 
