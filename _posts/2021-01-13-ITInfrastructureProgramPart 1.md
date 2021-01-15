@@ -9,9 +9,9 @@ author: "Myles"
 
 # Virtual Infrastructure Lab 1 
 
-Part 1 of this series will focus on building the virtual environment from which we'll be installing our operating systems, roles, and services.
+Part 1 of this series will focus on building the virtual environment from which we'll be installing our operating systems, roles, and services. One thing I want you to keep in mind while working through this and subsequent lab is: Attempt to work through issues! Don't waste two hours of your time on something, but given a solid try, and contact me only after that's failed. I've tried to be thorough in my documentation, but it is not exhaustive. There may be things I've overlooked or mistakes on your side. I would go so far as to say it's a good thing when you run across issues, you need the ability to work through problems. Problem-solving is an incredibly important part of working in IT, and most fields for that matter. That's it, I wish you the best of luck!
 
-Below is a list of computing requirements that I prefer your PC meet/exceed, however I've linked a site with a comprehensive list of the absolute minimum requirements as well.
+Below is a list of computing requirements that I prefer your PC to meet/exceed, however I've linked a site with a more comprehensive list of the absolute minimum requirements as well.
 
 | [**Prerequisites**](https://www.techrepublic.com/article/virtualbox-everything-the-pros-need-to-know/#:~:text=Minimum%20system%20requirements%20are%3A,start%20at%2010%20GB%20each.) |
 | :---:    |
