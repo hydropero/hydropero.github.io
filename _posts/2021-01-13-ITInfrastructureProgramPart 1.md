@@ -3,13 +3,16 @@ title: "IT Infrastructure Mentorship Part 1"
 author: "Myles"
 ---
 
+Welcome.
 <br>
 
 <br>
 
 # Virtual Infrastructure Lab 1 
 
-Part one of this series will focus on building virtual environment from which we'll install our operating systems, roles, and services. Here is something I want you to keep in mind during this and subsequent labs: Attempt to work through complications! No, don't waste two hours of your time on a single thing, but give it a solid try, and contact me only after that's failed. I've tried to be thorough in my documentation, but it is not exhaustive. There may be things I've overlooked or mistakes on your side, that's okay though, I would go so far as to say it's a good thing when you run into issues, you need that ability to work through problems. Problem-solving is an incredibly important part of working in IT,  many different fields for that matter. That's it, and I wish you the best of luck!
+Part one of this series will focus on building virtual environments from which we'll install our operating systems, roles, and services. Please keep this is mind going forward: Attempt to work through complications! Do not waste two hours of your time on a single issue, but give it a solid try before contacting me. I've tried to be thorough in my documentation, however it is not exhaustive. There may be things I've overlooked or there could be mistakes on your side, that's okay. I would go so far as to say it's a good thing when you run into these issues, you need that ability to work through difficult problems. Problem-solving is an essential part of working in IT, and many fields for that matter. 
+
+That's it, and I wish you the best of luck!
 
 Below is a list of computing requirements that I prefer your PC to meet/exceed, however I've linked a site with a more comprehensive list of the absolute minimum requirements as well.
 
@@ -91,7 +94,7 @@ You were probably just met with this screen. No? That's because we've only creat
 
 I have a couple extra operating systems in there due to previous projects but you should see your Windows2019.iso file at least. Highlight it and select choose, then start. You've now fed your computer a virtual disk, essentially what an ISO is, a virtual image of a disc.
 
-If your screen looks the same as the image below congrats you've made it to your OS installation screen. This concludes Part 1 of the Virtual Infrastructure tutorial. You are safe to close out of the screen and the VirtualBox application. You do need to attempt to install OS just yet. Instead, my suggestion is you create two more like this, except it'll be for our Windows 10 image this time around. Make sure when you're building the VM you select an appropriate title and operating system as show below.
+If your screen looks the same as the image below congrats you've made it to your OS installation screen. This concludes Part 1 of the Virtual Infrastructure tutorial. You are safe to close out of the screen and the VirtualBox application. You do not need to attempt to install the OS just yet. Instead, my suggestion for you to create two more like this, except they'll be for our Windows 10 image. Make sure when you're building the VM you select an appropriate title and operating system as shown below (disregard the highlighted option, we're not installing a Windows 8.1 iso as you should know).
 
 ![osoptions](\assets\images\class_p1\osoptions.png)
 
