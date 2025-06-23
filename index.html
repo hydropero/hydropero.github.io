@@ -46,6 +46,36 @@
       font-style: italic;
       color: #666;
     }
+    .contact {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 2px solid #ccc;
+    }
+    .contact form {
+      display: flex;
+      flex-direction: column;
+    }
+    .contact label {
+      margin: 10px 0 5px;
+    }
+    .contact input, .contact textarea {
+      padding: 10px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .contact button {
+      margin-top: 15px;
+      padding: 10px;
+      background-color: #333;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    .contact button:hover {
+      background-color: #555;
+    }
   </style>
 </head>
 <body>
@@ -76,6 +106,26 @@
       </ul>
 
       <p class="note">Prices are flexible — we strive to meet the needs of our neighbors in Logan Square, especially lower-income households. Don’t hesitate to reach out and ask.</p>
+    </section>
+
+    <section class="contact">
+      <h2>Contact Us</h2>
+      <p>If you have any questions, want custom pricing, or need help, please reach out using the form below or call/text us directly.</p>
+      <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your email address" required />
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Your phone number" />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" placeholder="How can we help you?" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
     </section>
   </div>
 </body>
