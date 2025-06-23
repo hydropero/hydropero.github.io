@@ -50,6 +50,22 @@
       margin-top: 40px;
       padding-top: 20px;
       border-top: 2px solid #ccc;
+      background: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+    .contact h2 {
+      margin-top: 0;
+    }
+    .contact-info {
+      background-color: #f0f0f5;
+      padding: 15px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+    .contact-info p {
+      margin: 5px 0;
     }
     .contact form {
       display: flex;
@@ -63,6 +79,8 @@
       font-size: 1rem;
       border: 1px solid #ccc;
       border-radius: 4px;
+      width: 100%;
+      box-sizing: border-box;
     }
     .contact button {
       margin-top: 15px;
@@ -72,6 +90,7 @@
       border: none;
       cursor: pointer;
       border-radius: 4px;
+      transition: background-color 0.3s ease;
     }
     .contact button:hover {
       background-color: #555;
@@ -110,10 +129,11 @@
 
     <section class="contact">
       <h2>Contact Us</h2>
-      <p>If you have any questions, want custom pricing, or need help, please contact us directly or use the form below.</p>
-
-      <p><strong>Phone:</strong> (847) 616-8745<br>
-      <strong>Email:</strong> <a href="mailto:info@resilienttech.org</a></p>
+      <div class="contact-info">
+        <p><strong>Phone:</strong> (847) 616-8745</p>
+        <p><strong>Email:</strong> <a href="mailto:info@resilienttech.org">info@resilienttech.org</a></p>
+      </div>
+      <p>Have questions or want a custom quote? Send us a message below:</p>
 
       <form action="https://formspree.io/f/movwkkje" method="POST">
         <label for="name">Name</label>
@@ -130,7 +150,8 @@
 
         <button type="submit">Send Message</button>
       </form>
-      <p class="note">This form is powered by Formspree. Replace <code>yourformid</code> in the form action with your actual ID from <a href="https://formspree.io">Formspree.io</a>.</p>
+
+      <p class="note">This form is powered by Formspree.</p>
     </section>
   </div>
 </body>
